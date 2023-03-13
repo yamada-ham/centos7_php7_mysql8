@@ -96,6 +96,9 @@ validate_password.mixed_case_count=0
 validate_password.number_count=0
 validate_password.special_char_count=0
 validate_password.policy=LOW
+
+# MySQL再起動
+$ systemctl restart mysqld
 ```
 
 <br>
