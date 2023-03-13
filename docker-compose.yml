@@ -28,6 +28,10 @@ services:
     volumes:
     - ./html:/var/www/html:cached
     - mysql-data:/var/lib/mysql
+    - ./volumes/httpd.conf:/etc/httpd/conf/httpd.conf
+    - ./volumes/v_host.conf:/etc/httpd/conf.d/v_host.conf
+    - ./volumes/php.ini:/etc/php.ini
+    - ./volumes/phpMyAdmin.conf:/etc/httpd/conf.d/phpMyAdmin.conf
     working_dir: /var/www/html
     tty: true
     platform: linux/x86_64 #CPUがm1の場合

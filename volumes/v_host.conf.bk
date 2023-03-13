@@ -1,0 +1,57 @@
+<VirtualHost *:81>
+DocumentRoot /var/www/html/phpinfo
+ServerName localhost81
+</VirtualHost>
+
+<VirtualHost *:82>
+DocumentRoot /var/www/html/site82
+ServerName localhost82
+</VirtualHost>
+
+<VirtualHost *:83>
+DocumentRoot /var/www/html/site83
+ServerName localhost83
+</VirtualHost>
+
+<VirtualHost *:84>
+DocumentRoot /var/www/html/site84
+ServerName localhost84
+</VirtualHost>
+
+<VirtualHost *:85>
+DocumentRoot /var/www/html/site85
+ServerName localhost85
+</VirtualHost>
+
+<VirtualHost *:86>
+DocumentRoot /var/www/html/site86
+ServerName localhost86
+</VirtualHost>
+
+<VirtualHost *:87>
+DocumentRoot /var/www/html/site87
+ServerName localhost87
+</VirtualHost>
+
+<VirtualHost *:88>
+DocumentRoot /var/www/html/site88
+ServerName localhost88
+</VirtualHost>
+
+<VirtualHost *:89>
+DocumentRoot /var/www/html/site89
+ServerName localhost89
+</VirtualHost>
+
+<VirtualHost *:90>
+DocumentRoot /var/www/html/site90
+ServerName localhost90
+</VirtualHost>
+
+<VirtualHost *:91>
+DocumentRoot /var/www/html/site91
+ServerName localhost91
+</VirtualHost>
+
+
+

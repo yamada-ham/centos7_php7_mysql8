@@ -41,10 +41,10 @@ RUN yum install -y nodejs \
 # RUN npm install gulp gulp-cli -g
 
 # ホストで用意した設定ファイルを反映
-COPY ./copy/httpd.conf /etc/httpd/conf/httpd.conf
-COPY ./copy/v_host.conf /etc/httpd/conf.d/v_host.conf
-COPY ./copy/php.ini /etc/php.ini
-COPY ./copy/phpMyAdmin.conf /etc/httpd/conf.d/phpMyAdmin.conf
+# COPY ./copy/httpd.conf /etc/httpd/conf/httpd.conf
+# COPY ./copy/v_host.conf /etc/httpd/conf.d/v_host.conf
+# COPY ./copy/php.ini /etc/php.ini
+# COPY ./copy/phpMyAdmin.conf /etc/httpd/conf.d/phpMyAdmin.conf
 
 # ディレクトリの所有者、グループを変更する。
 # RUN chown apache:apache /var/www/html/php_error.log

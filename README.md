@@ -42,7 +42,7 @@ $ docker-compose up -d
 ### 例:92番ポートを通す方法
 <br>
 
-centos7/copy/v_host.confに以下を追加
+./volumes/v_host.confに以下を追加
 
 ```
 <VirtualHost *:92>
