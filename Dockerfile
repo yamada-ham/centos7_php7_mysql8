@@ -49,6 +49,8 @@ RUN yum install -y nodejs \
 # ディレクトリの所有者、グループを変更する。
 # RUN chown apache:apache /var/www/html/php_error.log
 
+# UTF-8を使えるようにして、日本語を打てるようにする
+ENV LC_ALL en_US.UTF-8
 
 #公開ポート番号
 EXPOSE 80
