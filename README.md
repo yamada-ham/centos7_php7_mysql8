@@ -82,7 +82,8 @@ $ cat /var/log/mysqld.log | grep password
 ```
 # コマンドラインの場合
 $ echo -e "validate_password.check_user_name=OFF\nvalidate_password.length=4\nvalidate_password.mixed_case_count=0\nvalidate_password.number_count=0\nvalidate_password.special_char_count=0\nvalidate_password.policy=LOW\n" >> /etc/my.cnf
-# /etc/my.cnf をvimaなどで編集する場合
+
+# /etc/my.cnf をvimなどで編集する場合
 $ vim /etc/my.cnf
 # Password policy change
 validate_password.check_user_name=OFF 
