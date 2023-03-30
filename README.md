@@ -15,11 +15,6 @@ gulp
 ## Docker の導入
 [Dockerアプリインストール](https://docs.docker.com/get-docker/)
 
-git クローン
-```
-$ git clone git@github.com:yamada-ham/centos7_php7.git
-```
-
 コマンド ビルドして起動 
 ```
 $ docker-compose up -d
