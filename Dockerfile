@@ -34,8 +34,12 @@ RUN yum install -y https://rpm.nodesource.com/pub_16.x/el/9/x86_64/nodesource-re
 
 # lsof は、サーバーで特定のポート番号を待ち受けているかどうか、指定ファイルは誰が読み込んでいるのかを調べる
 RUN yum install -y nodejs \
-    yum install -y vim \
-    yum -y install lsof
+    vim \
+    lsof \
+    redis
+
+# redis自動起動
+RUN systemctl enable redis
 
 # グローバル にgulpを導入
 # RUN npm install gulp gulp-cli -g
