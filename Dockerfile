@@ -9,7 +9,7 @@ RUN systemctl enable httpd.service
 # PHP  
 RUN yum install -y epel-release
 RUN yum install -y http://rpms.remirepo.net/enterprise/remi-release-7.rpm
-RUN yum -y install --enablerepo=remi,epel,remi-php74 php php-mysqlnd php-mbstring php-gd php-xml php-xmlrpc php-pecl-mcrypt php-fpm php-opcache php-apcu php-pear php-pdo php-zip php-unzip php-pecl-zip phpMyAdmin
+RUN yum -y install --enablerepo=remi,epel,remi-php74 php php-mysqlnd php-mbstring php-gd php-xml php-xmlrpc php-pecl-mcrypt php-fpm php-opcache php-apcu php-pear php-pdo php-zip php-unzip php-pecl-zip phpMyAdmin php-redis
 
 RUN yum -y install https://dev.mysql.com/get/mysql80-community-release-el7-5.noarch.rpm && \
     yum -y install mysql-community-server

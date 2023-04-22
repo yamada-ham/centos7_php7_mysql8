@@ -28,6 +28,7 @@ services:
     volumes:
     - ./html:/var/www/html:cached
     - mysql-data:/var/lib/mysql
+    - ./volumes/redis.conf:/etc/redis.conf
     - ./volumes/httpd.conf:/etc/httpd/conf/httpd.conf
     - ./volumes/v_host.conf:/etc/httpd/conf.d/v_host.conf
     - ./volumes/php.ini:/etc/php.ini
