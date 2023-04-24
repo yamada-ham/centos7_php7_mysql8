@@ -36,10 +36,15 @@ RUN yum install -y https://rpm.nodesource.com/pub_16.x/el/9/x86_64/nodesource-re
 RUN yum install -y nodejs \
     vim \
     lsof \
-    redis
+    redis \
+    supervisor
 
 # redis自動起動
 RUN systemctl enable redis
+
+# supervisord 自動起動
+RUN supervisord -c /etc/supervisord.conf
+RUN systemctl enable supervisord
 
 # グローバル にgulpを導入
 # RUN npm install gulp gulp-cli -g
