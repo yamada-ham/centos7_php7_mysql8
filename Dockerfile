@@ -33,11 +33,14 @@ RUN curl -sS https://getcomposer.org/installer | php && \
 RUN yum install -y https://rpm.nodesource.com/pub_16.x/el/9/x86_64/nodesource-release-el9-1.noarch.rpm
 
 # lsof は、サーバーで特定のポート番号を待ち受けているかどうか、指定ファイルは誰が読み込んでいるのかを調べる
-RUN yum install -y nodejs \
+RUN yum install -y \
+    sudo \
+    nodejs \
     vim \
     lsof \
     redis \
-    supervisor
+    supervisor \
+    cronie
 
 # redis自動起動
 RUN systemctl enable redis
@@ -45,6 +48,9 @@ RUN systemctl enable redis
 # supervisord 自動起動
 RUN supervisord -c /etc/supervisord.conf
 RUN systemctl enable supervisord
+
+# Cron 自動起動
+RUN systemctl enable crond
 
 # グローバル にgulpを導入
 # RUN npm install gulp gulp-cli -g
