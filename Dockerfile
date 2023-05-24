@@ -52,6 +52,11 @@ RUN systemctl enable supervisord
 # Cron 自動起動
 RUN systemctl enable crond
 
+# Chromブラウザ導入
+RUN yum -y install https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm \
+    google-chrome-stable \
+    ipa-gothic-fonts
+
 # グローバル にgulpを導入
 # RUN npm install gulp gulp-cli -g
 
