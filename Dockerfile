@@ -57,6 +57,12 @@ RUN yum -y install https://dl.google.com/linux/direct/google-chrome-stable_curre
     google-chrome-stable \
     ipa-gothic-fonts
 
+# Ngrok 導入
+RUN curl -OL https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz && \
+    tar -xvzf ngrok-v3-stable-linux-amd64.tgz -C /usr/local/bin && \
+    rm -rf ngrok-v3-stable-linux-amd64.tgz
+
+
 # グローバル にgulpを導入
 # RUN npm install gulp gulp-cli -g
 
